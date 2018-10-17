@@ -1,0 +1,4 @@
+<div *ngIf="childSelectedTask">
+    <input [(ngModel)]="childSelectedTask.description" type="text" name="user">
+    <button (click)="finishedEditing()">Done</button>
+</div>
