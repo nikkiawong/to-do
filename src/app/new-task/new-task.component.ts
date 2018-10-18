@@ -9,7 +9,7 @@ import { Task } from '../models/task.model';
 export class NewTaskComponent {
   @Output() sendTask = new EventEmitter();
 
-  submitForm(description: string, priority: string) {
+  submitForm(description: string, priority: number) {
     let newTask: Task = new Task(description, priority);
     this.sendTask.emit(newTask);
   }
